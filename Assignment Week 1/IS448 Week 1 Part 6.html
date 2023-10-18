@@ -1,0 +1,139 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+<title>Media</title>
+</head>
+<!-- Images -->
+<img
+	src="https://picsum.photos/id/6/500/300"
+	alt="city"
+/>
+<img src="assets/image.jpg" alt="trees"/>
+<!-- Picture -->
+<picture>
+<source
+	media="(max-width:650px)"
+	srcset="assets/small.jpg"
+	/>
+	<img
+	src="assets/big.jpg"
+	alt="truck" style="width:auto;"
+	/>
+	</picture>
+
+<!-- Map & Area -->
+<img
+src="https://source.unsplash.com/n8Qb1ZAkK88/640x414"
+	usemap="#image-map"
+/>
+
+<map name="image-map">
+	<area
+	target=""
+	alt="Laptop"
+	title="Laptop"
+	href="https://en.wikipedia.org/wiki/Laptop"
+	coords="244,49,506,95,451,384,199,339"
+	shape="poly"
+/>
+	<area
+	target=""
+	alt="Phone"
+	title="Phone"
+	href="https://en.wikipedia.org/wiki/LaptopSmartphone"
+	coords="545,331,493,238"
+	shape="rect"
+/>
+	<area
+	target=""
+	alt="Glass"
+	title="Glass"
+	href="https://en.wikipedia.org/wiki/Glass"
+	coords="143,278,36"
+	shape="circle"
+/>
+</map>
+
+<!-- Figure -->
+<figure>
+<img src="https://picsum.photos/id/435/400/300"/>
+<figcaption>
+Feb 03 2019 - My Camera
+</figcaption>
+</figure>
+
+<!-- Audio -->
+<audio controls>
+<source
+	src="assets/hiphop.mp3"
+	type="audio/mp3"
+	/>
+</audio>
+
+<!-- Video -->
+<video width="500" height="280" controls>
+<source
+	src="assets/video.mp4"
+	type="video/mp4"
+	/>
+</video>
+
+<!-- Video with Subtitles -->
+<video width="500" height="280" controls>
+<source
+	src="assets/video.mp4"
+	type="video/mp4"
+	/>
+<track
+	src="assets/subtitles.vtt"
+	kind="subtitles"
+	srclang="en"
+	label="English">
+</video>
+
+<!-- Iframe -->
+<iframe
+	width="500"
+	height"400"
+	src="https://www.youtube.com/embed/qpsz_vCH9KI"
+></iframe>
+<iframe
+	width="424"
+	height"238"
+	src="https://www.youtube.com/embed/qpsz_vCH9KI"
+	title="YouTube video player"
+	frameborder="0"
+	allow=encrypted-media;
+	allowfullscreen
+></iframe>
+<iframe
+	width="300"
+	height="380"
+	src="https://open.spotify.com/embed/album/2oj3FG6fos7zAQJxLQGzou?utm_source=generator"
+	frameborder="0"
+	allowtransparency="true"
+	allow=encrypted-media;
+	allowfullscreen
+></iframe>
+
+<!--Object & Param -->
+<object data="assets/image.jpg" width="300">
+<param name="height" value="200"/>
+</object>
+
+<!--Embed-->
+<embed
+	type="image/jpg"
+	src="assets/image.jpg"
+	width="300" height="200"
+/>
+</body>
+</html>
